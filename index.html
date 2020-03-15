@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+   <div class="menu">
+       <div class="menu__body">
+           <ul>PLAY WITH:
+               <li>COMPUTER</li>
+               <li>PLAYER</li>
+           </ul>
+           <button>START</button>
+       </div>
+   </div>
+   
     
     <div class="player__inf">
         <h1 id="p1" class="player active__player p1-color">P1 <span id="scoreX"></span></h1>
@@ -18,10 +29,10 @@
     </div>
     
     
-    <div class="winner">
-        <div class="winner__body">
-            
-        </div>
+    <div class="winner ">    
+        <p class="win" id="x_win">крестики победили</p>
+        <p class="win visible" id="o_win">нолики победили</p>
+        <button id="win_btn" class="win_btn">RESTART</button>
     </div>
     
     

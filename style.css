@@ -4,10 +4,107 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 body{
     margin: 0 auto;
     background-color: #1a575f;
     max-height: 700px;
+    position: relative;
+}
+
+.menu{
+    max-width: 1200px;
+}
+
+.menu__body{
+    margin-top: 8%;
+    text-align: center;
+    z-index: 3;
+    background-color: #5e7376;
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.player__inf{
+    max-width: 1200px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color: #fff;
+    margin: 20px auto 0 auto;
+}
+
+.player{
+    margin: 0 auto;
+    filter: saturate(50%);
+}
+
+.active__player{
+    transform: scale(1.5);
+    filter: brightness(2.4);
+}
+
+.p1-color{
+    color: #c60b0b;
+}
+
+.p2-color{
+    color: #88ab0f;
+}
+
+.score__inf h1{
+    text-align: center;
+    color: #fff;
+}
+
+.winner{
+    background-color: #5e7376;
+    width: 100%;
+    max-height: 1000px;
+    height: 250px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.win{
+    margin-top: 4%;
+    text-align: center;
+    display: none;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#x_win{
+   color: #c60b0b;
+}
+
+#o_win{
+    color: #88ab0f;
+    filter: brightness(2.4);
+}
+
+.win_btn{
+    display: block;
+    font-size: 40px;
+    border-radius: 5px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+
+.visible{
+    display: block;
 }
 
 .desk{
@@ -27,10 +124,6 @@ body{
 #desk__inner{
     width: 32em;
     height: 2em;
-/*
-    width: 600px;
-    height: 600px;    
-*/
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -64,52 +157,10 @@ body{
     background-color: aqua;
 }
 
-.player__inf{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    color: #fff;
-    margin-top: 20px;
-}
 
-.player{
-    margin: 0 auto;
-    filter: saturate(50%);
-}
 
-.active__player{
-    transform: scale(1.5);
-    filter: brightness(2.4);
-}
 
-.p1-color{
-    color: #c60b0b;
-}
 
-.p2-color{
-    color: #88ab0f;
-}
-
-.score__inf h1{
-    text-align: center;
-    color: #fff;
-}
-
-.winner{
-    background-color: #5e7376;
-    width: 100%;
-    height: 100%;
-    z-index: 30;
-}
-
-.winner__body{
-    margin: 0 auto;
-    height: 100px;
-    width: 200px;
-    background-color: #66979e;
-}
 
 
 
